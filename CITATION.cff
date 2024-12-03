@@ -13,37 +13,3 @@ version: 1.0.0
 doi: 10.5281/zenodo.1234
 date-released: 2024-12-03
 url: "https://github.com/AhmedRadwan02/CanWeTrustReFAIR"
-
-references:
-  - type: article
-    authors:
-      - family-names: "Chen"
-        given-names: "Z."
-      - family-names: "Zhang"
-        given-names: "J. M."
-      - family-names: "Sarro"
-        given-names: "F."
-      - family-names: "Harman"
-        given-names: "M."
-    title: "MAAT: A novel ensemble approach to addressing fairness and performance bugs for machine learning software"
-    date: "2022-11"
-    venue: "Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering"
-    pages: "1122-1134"
-    doi: "10.1145/some-doi-if-available"
-  - type: article
-    authors:
-      - family-names: "Ferrara"
-        given-names: "C."
-      - family-names: "Casillo"
-        given-names: "F."
-      - family-names: "Gravino"
-        given-names: "C."
-      - family-names: "De Lucia"
-        given-names: "A."
-      - family-names: "Palomba"
-        given-names: "F."
-    title: "ReFAIR: Toward a Context-Aware Recommender for Fairness Requirements Engineering"
-    date: "2024-04"
-    venue: "Proceedings of the IEEE/ACM 46th International Conference on Software Engineering"
-    pages: "1-12"
-    doi: "10.1109/some-doi-if-available"
