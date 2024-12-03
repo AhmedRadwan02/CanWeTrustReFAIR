@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite it and the related works below."
+message: "If you use this repository."
 authors:
   - family-names: "Radwan"
     given-names: "Ahmed"
@@ -7,9 +7,9 @@ authors:
     given-names: "Claudia"
   - family-names: "Haeri"
     given-names: "Amir"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
 title: "CanWeTrustReFAIR"
-version: 1.0.0
-doi: 10.5281/zenodo.1234
-date-released: 2024-12-03
+version: "1.0.0"
+doi: "10.5281/zenodo.1234"
+date-released: "2024-12-03"
 url: "https://github.com/AhmedRadwan02/CanWeTrustReFAIR"
