@@ -1,0 +1,181 @@
+Domain,Feature
+biology,N/A
+cardiology,age
+cardiology,race
+cardiology,sex
+computer networks,N/A
+computer vision,age
+computer vision,disability
+computer vision,gender
+computer vision,geography
+computer vision,jersey color (athletes)
+computer vision,race
+computer vision,skin color
+computer vision,skin tone
+computer vision,skin type
+computer vision,weight
+demograpy,N/A
+dermatology,age
+dermatology,citizenship
+dermatology,geography
+dermatology,language
+dermatology,race
+dermatology,sex
+dermatology,skin type
+economics,age
+economics,birthplace
+economics,disability
+economics,family size
+economics,gender
+economics,geography
+economics,nationality
+economics,race
+economics,sex
+education,age
+education,birth category
+education,caste
+education,ethnicity
+education,family wealth
+education,financial status
+education,gender
+education,geography
+education,race
+education,racial-ethnic group
+education,sex
+endocrinology,age
+endocrinology,gender
+endocrinology,race
+finance & marketing,activity
+finance & marketing,age
+finance & marketing,gender
+finance & marketing,geography
+finance & marketing,race
+finance & marketing,sex
+health,age
+health,ethnicity
+health,gender
+health,sex
+health,blood type
+health,geography
+information systems,age
+information systems,brand ownership
+information systems,demographics of people featured in entities and their relations
+information systems,gay-friendliness
+information systems,gender
+information systems,geography
+information systems,geography and their relations
+information systems,ownership
+information systems,race
+information systems,sex
+information systems,skin tone
+information systems,spoken language
+information systems,tour availability
+information systems,ethnic group
+information systems,artist
+information systems,record label
+information systems,user age
+information systems,news provider
+information systems,textual references to people and their demographics
+law,age
+law,ethnicity
+law,gender
+law,geography
+law,race
+law,sex
+library,author
+linguistics,business size
+linguistics,dialect
+linguistics,gender
+linguistics,geography
+linguistics,political leaning
+linguistics,profession
+linguistics,race
+linguistics,race and religion
+linguistics,religion
+linguistics,sex
+linguistics,textual references to people and their demographics
+linguistics,dialect (related to race)
+literature,gender
+literature,geography (of author)
+literature,textual references to people and their demographics
+literature,author
+medicine,age
+medicine,ethnicity
+medicine,gender
+medicine,race
+medicine,sex
+movies,age
+movies,gender
+music,artist
+music,gender
+music,geography
+music,record label
+music,user age
+nephrology,age
+nephrology,gender
+nephrology,race
+news,author
+news,textual references to people and their demographics
+news,geography
+news,news provider
+pediatrics,age (maternal)
+pediatrics,ethnicity
+pediatrics,race
+pharmacology,age
+pharmacology,ethnicity
+pharmacology,sex
+plant science,N/A
+political science,age
+political science,education
+political science,ethnicity
+political science,gender
+political science,geography
+political science,political affiliation (representation in different precincts)
+political science,race
+political science,urban/rural
+psychology,age
+psychology,ethnicity
+psychology,gender
+psychology,geography
+radiology,age
+radiology,age (of patient)
+radiology,ethnicity
+radiology,race
+radiology,sex
+social media,age
+social media,disability
+social media,gender
+social media,geography
+social media,political leaning
+social media,political orientation
+social media,race
+social media,race/ethnicity
+social media,religion
+social media,sexual orientation
+social media,textual references to people and their demographics
+social media,dialect (related to race)
+social networks,age
+social networks,gender
+social networks,geography
+social networks,ethnicity
+social networks,sex
+social work,age
+social work,gender
+social work,gender of child
+social work,geography
+social work,race
+social work,race and ethnicity
+social work,sexual orientation
+social work,ethnicity
+social work,sex
+sociology,age
+sociology,gender
+sociology,geography
+sociology,race
+sport,age
+sport,football conference
+sport,geography
+sport,sex
+transportation,geography
+transportation,race
+urban studies,geography

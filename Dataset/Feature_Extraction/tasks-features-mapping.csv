@@ -1,0 +1,159 @@
+Task,Feature
+advertising,gender
+advertising,geography
+advertising,race
+anomaly detection,age
+anomaly detection,gender
+anomaly detection,race
+anomaly detection,sex
+anomaly detection,skin tone
+bias detection in language models,gender
+bias detection in language models,political leaning
+bias detection in language models,profession
+bias detection in language models,race
+bias detection in language models,religion
+bias detection in language models,textual references to people and their demographics
+bias detection in language models,age
+bias detection in language models,artist
+bias detection in language models,ethnicity
+bias detection in language models,geography
+bias detection in language models,other sensitive annotations may be present in synsets from the person subtree
+bias detection in language models,people's gender
+bias detection in language models,record label
+bias detection in language models,sex
+bias detection in language models,skin color
+bias detection in language models,skin type
+bias detection in word embeddings,race
+bias detection in word embeddings,sex
+bias detection in word embeddings,gender
+bias detection in word embeddings,textual references to people and their demographics
+classification,age
+classification,geography
+classification,race
+classification,sex
+classification,synthetic
+classification,birthplace
+classification,citizenship
+classification,disability
+classification,ethnicity
+classification,family size
+classification,family wealth
+classification,gender
+classification,other sensitive annotations may be present in synsets from the person subtree
+classification,people's gender
+classification,race (inferred)
+classification,skin tone
+classification,skin type
+classification,textual reference to people and their demographics
+classification,textual references to people and their demographics
+classification,race/ethnicity
+classification,religion
+classification,sexual orientation
+clustering,age
+clustering,author
+clustering,ethnicity
+clustering,gender
+clustering,geography
+clustering,race
+clustering,sex
+clustering,textual references to people and their demographics
+data summarization,age
+data summarization,caste
+data summarization,gender
+data summarization,geography
+data summarization,male/female
+data summarization,race
+data summarization,sex
+data summarization,skin tone
+districting,political affiliation (representation in different precincts)
+districting,race
+entity resolution,business size
+entity resolution,geography
+graph augmentation,gender
+graph augmentation,race
+graph diffusion,age
+graph diffusion,ethnicity
+graph diffusion,gender
+graph diffusion,geography
+graph diffusion,race and ethnicity
+graph diffusion,sexual orientation
+graph mining,age
+graph mining,author
+graph mining,demographics of people featured in entities and their relations
+graph mining,gender
+graph mining,geography
+machine translation,gender
+matching,age
+matching,gender
+matching,geography
+matching,race
+pricing,age
+pricing,birthplace
+pricing,gender
+pricing,geography
+ranking,activity
+ranking,age
+ranking,and gender
+ranking,birth category
+ranking,ethnic group
+ranking,gender
+ranking,geography
+ranking,news provider
+ranking,ownership
+ranking,race
+ranking,sex
+ranking,tour availability
+regression,age
+regression,ethnicity
+regression,financial status
+regression,gender
+regression,geography
+regression,race
+regression,sex
+representation learning,age
+representation learning,and gender
+representation learning,ethnicity
+representation learning,financial status
+representation learning,gender
+representation learning,geography
+representation learning,race
+representation learning,race (inferrred)
+representation learning,sex
+representation learning,skin color
+representation learning,skin tone
+resource allocation,synthetic
+resource allocation,age
+resource allocation,race
+resource allocation,sex
+resource allocation,geography
+risk assessment,age
+risk assessment,age (maternal)
+risk assessment,ethnicity
+risk assessment,gender
+risk assessment,gender (of infant)
+risk assessment,gender of child
+risk assessment,geography
+risk assessment,race
+risk assessment,race and ethnicity (of parents)
+sentiment analysis,race
+sentiment analysis,sex
+spatio-temporal process learning,age
+spatio-temporal process learning,and gender (of victim)
+spatio-temporal process learning,geography
+spatio-temporal process learning,race
+speech recognition,dialect
+speech recognition,gender
+speech recognition,geography
+subset selection,age
+subset selection,education
+subset selection,ethnicity
+subset selection,gender
+subset selection,geography
+subset selection,urban/rural
+subset selection,race
+subset selection,skin tone (inferred)
+task assignment,age
+task assignment,age and race of defendants and crowd-sourced judges
+task assignment,geography
+task assignment,sex
+other,N/A
