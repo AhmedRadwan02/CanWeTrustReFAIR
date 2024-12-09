@@ -1,0 +1,32 @@
+# Word2Vec models
+word2vec-google-news-300.bin
+wiki*.bin
+*.vec
+*.model
+*.bin.gz
+
+# GloVe embeddings
+glove.*.txt
+glove.*.word2vec
+glove.*.zip
+
+# FastText models
+cc.*.bin
+cc.*.vec
+wiki.*.bin
+wiki.*.vec
+
+# Temporary/processed embedding files
+*.zip
+*.tar.gz
+*.pkl
+
+# Python stuff
+__pycache__/
+*.py[cod]
+*.so
+.env
+
+# IDE
+.vscode/
+.idea/
