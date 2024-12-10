@@ -20,13 +20,3 @@ wiki.*.vec
 *.zip
 *.tar.gz
 *.pkl
-
-# Python stuff
-__pycache__/
-*.py[cod]
-*.so
-.env
-
-# IDE
-.vscode/
-.idea/
