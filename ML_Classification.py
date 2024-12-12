@@ -16,7 +16,7 @@ def hamming_loss_score(y_true, y_pred):
     Returns:
         float: Hamming loss score between 0 and 1
     """
-    return hamming_loss(y_true, y_pred)
+    return hamming_loss(y_true, y_pred) 
 
 
 
