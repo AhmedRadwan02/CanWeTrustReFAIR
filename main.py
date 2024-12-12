@@ -16,4 +16,4 @@
 ## export results after adding the 10 fold of each task together (3 CSV files)
 
 
-# end-up 15 csv file exported
+# end-up 15 csv file exported (Results should be saved in their folder)
