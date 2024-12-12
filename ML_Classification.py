@@ -4,59 +4,71 @@ import pandas as pd
 import lazypredict
 from lazypredict.Supervised import LazyClassifier
 from sklearn.metrics import hamming_loss, f1_score
-###
-class ML_Classification:
-    """Classifier for multilabel ML task classification using Label Powerset approach.
-        Uses LazyPredict to evaluate multiple models and select the best performing one.
-   """
-    def __init__(self):
-    # Initialize classifier with LazyPredict for model evaluation 
-       self.lazy_classifier = LazyClassifier(verbose=0, ignore_warnings=True)
-       self.best_model = None
-       self.best_model_name = None
-       self.models_performance = None
-    
-    def train_ml_models(self,x_train, y_train, x_test, y_test):
-        """
-        Train multiple models using LazyPredict and return the best performing one.
+
+
+def hamming_loss_score(y_true, y_pred):
+    """
+    Helper function to calculate hamming loss between true and predicted labels.
+    Args:
+        y_true (array-like): True labels
+        y_pred (array-like): Predicted labels
        
-        Args:
-            x_train: Training features (embedded)
-            y_train: Training labels 
-            x_test: Test features
-            y_test: Test labels
+    Returns:
+        float: Hamming loss score between 0 and 1
+    """
+    return hamming_loss(y_true, y_pred)
+
+
+
+class ML_Classification:
+    """
+    A class for training and evaluating multiple machine learning models for classification tasks.
+    It leverages LazyPredict to automatically train and evaluate multiple ML models. 
+    Will be used in loop: 3 (datasets) x 5 (embedding types per dataset) = 15 (total combinations to evaluate)
+
+    Methods:
+        train_ml_models() returns tuple of best performing models
+    
+    """
+    def __init__(self):
+        """
+        Initializes ML_Classification with 2 LazyPredict classifiers
+        
+        """
+        # 1. Standard classifier for basic evaluation 
+        self.lazy_classifier = LazyClassifier(verbose=0, ignore_warnings=True)
+        # 2. Classifier with custom hamming loss metric
+        self.clf = LazyClassifier(verbose=0, ignore_warnings=True, custom_metric=hamming_loss_score)
+    
+
+    def train_ml_models(self, x_train, y_train, x_test, y_test):
+        """
+        Train multiple models to evaluate thier perofrmance and returns best model name with it's performance metrics.
+       
+        Params:
+            x_train (array-like): Features for training (comes from embeddings)
+            y_train (array-like): Target labels for training
+            x_test (array-like): Features for testing
+            y_test (array-like): Target labels for testing
             
         Returns:
-            dict: Contains:
-                - 'best_model_name': Name of best performing model
-                - 'best_model_performance': Performance metrics of best model
-                - 'all_models_performance': Performance of all tried models
+            tuple: (best_model_name, performance_dataframe)
+                - 'best_model_name' (string): Name of best performing model
+                - performance_df (dataframe): Performance metrics for all models
        """
-        # Train models using LazyPredict
-        models_performance, predictions = self.lazy_classifier.fit(
-            x_train, x_test,
-            y_train, y_test
-        )
         
-        self.models_performance = models_performance
-       
-        # Get best model based on F1 score
-        # Convert performance dataframe to dictionary for easier handling
-        models_dict = models_performance.to_dict('index')
+        # Train models using LazyPredict - models_df is first item in tuple
+        models_df = self.clf.fit(x_train, x_test, y_train, y_test)[0]       #self.clf.fit returns tuple - we want first element df [0]
+        # print(models_df)
         
-        # Find best model (highest F1 score)
-        best_model_name = max(models_dict.items(),key=lambda x: x[1]['Accuracy'])[0]
+        # Extract relevant metrics into new DataFrame
+        performance_df = models_df[['Accuracy', 'F1 Score', 'hamming_loss_score']].copy()    # Keeping only Accuracy, F1 Score and hamming loss
+        performance_df.index.name = 'Model'
         
-        # Get performance metrics for best model
-        best_model_performance = {
-            'hamming_loss': hamming_loss(y_test, predictions[best_model_name]),
-            'f1_score_micro': f1_score(y_test, predictions[best_model_name], average='micro'),
-            'f1_score_macro': f1_score(y_test, predictions[best_model_name], average='macro')
-        }
+        # Find best performing model based on accuracy
+        best_model_name = performance_df.index[performance_df['Accuracy'].argmax()]
         
-        return {
-            'best_model_name': best_model_name,
-            'best_model_performance': best_model_performance,
-            'all_models_performance': models_performance
-        }
+        # Return best model name and all performance metrics
+        # Reset index to make Model name a column
+        return best_model_name, performance_df.reset_index()
          
