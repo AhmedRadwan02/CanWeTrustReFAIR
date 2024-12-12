@@ -1,5 +1,7 @@
 ## Imports
 
+## installation of embedding models (Save them in the EmbeddingModels folder)
+
 
 ## Load 3 datasets problems
 
@@ -16,4 +18,4 @@
 ## export results after adding the 10 fold of each task together (3 CSV files)
 
 
-# end-up 15 csv file exported (Results should be saved in their folder)
+# end-up 15 csv file exported (Results should be saved in their Evaulations folder)
