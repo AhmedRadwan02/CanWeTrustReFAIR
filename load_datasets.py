@@ -3,7 +3,7 @@ import ast
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MultiLabelBinarizer
-from skmultilearn.problem_transform import LabelPowerset
+from skmultilearn.problem_transform import LabelPowerset, ClassifierChain
 
 class LoadDatasets:
     def __init__(self):
@@ -20,8 +20,8 @@ class LoadDatasets:
         y = dataset['Target']
         return pd.DataFrame(y)
 
-    def load_mltask(self, format):
-        dataset = pd.read_excel(self.ml_path, header=None)
+    def load_mltask(self):
+        dataset = pd.read_excel(self.ml_path)
         labels = pd.read_excel(self.labels_path, header=None)
         
         labels[2] = labels[2].apply(lambda x: x.lower())
@@ -33,20 +33,13 @@ class LoadDatasets:
                     current_labels.append(label.lower())
             categories_column.append(current_labels)
         labels["Categories array"] = categories_column
-
         target = []
         for row in dataset.iterrows():
             target.append(labels[labels[2] == row[1]["Machine Learning Task"].lower()]
                           ["Categories array"].values[0])
         dataset["Target"] = target
         dataset['Target'] = dataset['Target'].apply(lambda x: ast.literal_eval(str(x)))
-
-        if format == 'binary':
-            multilabel = MultiLabelBinarizer()
-            y = multilabel.fit_transform(dataset['Target'])
-            return pd.DataFrame(y, columns=multilabel.classes_)
+        multilabel = MultiLabelBinarizer()
+        y = multilabel.fit_transform(dataset['Target'])
         
-        elif format == 'powerset':
-            lp = LabelPowerset()
-            y = lp.fit_transform(dataset['Target'])
-            return pd.DataFrame(y.toarray(), columns=lp.classes_)
+        return pd.DataFrame(y, columns=multilabel.classes_)
