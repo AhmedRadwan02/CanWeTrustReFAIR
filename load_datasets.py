@@ -21,7 +21,7 @@ class LoadDatasets:
         return pd.DataFrame(y)
 
     def load_mltask(self, format):
-        dataset = pd.read_excel(self.ml_path)
+        dataset = pd.read_excel(self.ml_path, header=None)
         labels = pd.read_excel(self.labels_path, header=None)
         
         labels[2] = labels[2].apply(lambda x: x.lower())
@@ -41,13 +41,12 @@ class LoadDatasets:
         dataset["Target"] = target
         dataset['Target'] = dataset['Target'].apply(lambda x: ast.literal_eval(str(x)))
 
-        multilabel = MultiLabelBinarizer()
-        y = multilabel.fit_transform(dataset['Target'])
-
         if format == 'binary':
+            multilabel = MultiLabelBinarizer()
+            y = multilabel.fit_transform(dataset['Target'])
             return pd.DataFrame(y, columns=multilabel.classes_)
         
         elif format == 'powerset':
             lp = LabelPowerset()
-            y_transformed = lp.transform(y)
-            return pd.DataFrame(y_transformed)
+            y = lp.fit_transform(dataset['Target'])
+            return pd.DataFrame(y.toarray(), columns=lp.classes_)
