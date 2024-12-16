@@ -19,4 +19,3 @@ wiki.*.vec
 # Temporary/processed embedding files
 *.zip
 *.tar.gz
-*.pkl

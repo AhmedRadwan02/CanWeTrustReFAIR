@@ -1,0 +1,123 @@
+﻿Domain,Task
+biology,classification
+biology,graph mining
+cardiology,classification
+cardiology,ranking
+computer networks,clustering
+computer vision,classification
+computer vision,data summarization
+computer vision,clustering
+computer vision,anomaly detection
+computer vision,representation learning
+demograpy,classification
+demograpy,resource allocation
+demograpy,regression
+demograpy,clustering
+economics,classification
+economics,clustering
+economics,anomaly detection
+economics,subset selection
+economics,representation learning
+economics,ranking
+economics,data summarization
+economics,regression
+economics,risk assessment
+economics,resource allocation
+economics,pricing
+education,regression
+education,subset selection
+education,data summarization
+education,classification
+education,representation learning
+education,risk assessment
+education,ranking
+endocrinology,clustering
+finance & marketing,classification
+finance & marketing,resource allocation
+finance & marketing,ranking
+finance & marketing,classification
+finance & marketing,representation learning
+finance & marketing,clustering
+finance & marketing,data summarization
+finance & marketing,anomaly detection
+finance & marketing,pricing
+finance & marketing,advertising
+health,regression
+health,classification
+health,representation learning
+health,graph diffusion
+health,matching
+health,pricing
+information systems,subset selection
+information systems,ranking
+information systems,data summarization
+information systems,representation learning
+information systems,classification
+information systems,matching
+law,task assignment
+law,subset selection
+law,resource allocation
+law,classification
+law,risk assessment
+law,representation learning
+law,ranking
+law,classification
+law,regression
+law,subset selection
+law,clustering
+law,spatio-temporal process learning
+library,clustering
+library,matching
+linguistics,sentiment analysis
+linguistics,bias detection in word embeddings
+linguistics,subset selection
+linguistics,bias detection in language models
+linguistics,machine translation
+linguistics,bias detection in word embeddings
+linguistics,sentiment analysis
+linguistics,entity resolution
+linguistics,speech recognition
+linguistics,
+linguistics,sentiment analysis
+literature,clustering
+literature,ranking
+medicine,classification
+medicine,risk assessment
+medicine,classification
+movies,ranking
+movies,data summarization
+movies,representation learning
+music,ranking
+news,clustering
+news,bias detection in word embeddings
+news,ranking
+pediatrics,risk assessment
+plant science,clustering
+political science,clustering
+political science,advertising
+political science,districting
+political science,subset selection
+psychology,classification
+radiology,classification
+social media,classification
+social media,bias detection in word embeddings
+social media,sentiment analysis
+social media,advertising
+social media,ranking
+social media,speech recognition
+social media,bias detection in language models
+social networks,graph augmentation
+social networks,clustering
+social networks,graph diffusion
+social networks,data summarization
+social work,risk assessment
+social work,spatio-temporal process learning
+social work,graph diffusion
+social work,clustering
+sociology,matching
+sociology,ranking
+sports,clustering
+transportation,matching
+transportation,regression
+transportation,pricing
+transportation,graph augmentation
