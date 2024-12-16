@@ -110,4 +110,4 @@ The code will automatically download large pre-trained embedding models:
 
 - **Ahmed Radwan**  
 - **Claudia Farkas**  
-- **Emir Heari**
+- **Amir Heari**
