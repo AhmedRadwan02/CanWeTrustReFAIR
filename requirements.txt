@@ -8,3 +8,7 @@ torch
 transformers
 jupyter
 notebook
+nltk
+gensim
+xgboost
+fasttext
